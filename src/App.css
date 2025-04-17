@@ -1,1 +1,19 @@
 @import "tailwindcss";
+
+@layer utilities {
+  @keyframes letterSpacing {
+    from {
+      letter-spacing: 0;
+      opacity: 1;
+    }
+    to {
+      letter-spacing: 0.2em;
+      opacity: 1;
+    }
+  }
+
+  .animate-letter-spacing {
+    animation: letterSpacing 1s ease-in-out forwards;
+    animation-delay: 0.3s;
+  }
+}
